@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 30px 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 70px);
+}
+
+.h1 {
+  max-width: 560px;
+  font-size: 32px;
+  font-weight: 700px;
+  color: #fff;
+}

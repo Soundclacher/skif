@@ -1,11 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+
+import styles from './menuItem.module.css';
 
 const MenuItem = (props) => {
   return (
-    <a href={props.link}>
+    <Link to={props.link} className={styles.item}>
       <img src={props.logo} alt="" />
-      <p>{props.text}</p>
-    </a>
+      <p className={styles.p} >{props.text}</p>
+    </Link>
   )
 }
 

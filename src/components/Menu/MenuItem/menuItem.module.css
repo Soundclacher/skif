@@ -1,0 +1,13 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 15px;
+}
+
+.p {
+    margin: 0;
+}
