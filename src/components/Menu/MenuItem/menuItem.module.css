@@ -11,3 +11,7 @@
 .p {
     margin: 0;
 }
+
+.scroll {
+    display: none;
+}

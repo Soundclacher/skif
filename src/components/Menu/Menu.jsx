@@ -8,14 +8,14 @@ import GalleryIcon from './icons/gallery.svg';
 
 const items = [
   {
+    link: '/about',
+    logo: MapIcon,
+    text: 'О нас' 
+  },
+  {
     link: '/gallery',
     logo: GalleryIcon,
     text: 'Галлерея' 
-  },
-  {
-    link: '/map',
-    logo: MapIcon,
-    text: 'Мы на карте' 
   },
   {
     link: 'news',
@@ -23,16 +23,16 @@ const items = [
     text: 'Новости' 
   },
   {
-    link: '/',
+    link: '/events',
     logo: WriteIcon,
-    text: 'Главная' 
+    text: 'Мероприятия' 
   },
 ];
 
-const Menu = () => {
+const Menu = (props) => {
   
   const layout = items.map((item) => {
-    return <MenuItem {...item} key={item.link} />;
+    return <MenuItem {...item} key={item.link} scroll={props.scroll} />;
   })
   
   return (

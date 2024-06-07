@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Map = () => {
+const About = () => {
   return <>
 
   </>
 }
 
-export default Map;
+export default About;

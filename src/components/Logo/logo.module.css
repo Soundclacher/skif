@@ -3,3 +3,23 @@
   justify-content: center;
   align-items: center;
 }
+.h1 {
+  max-width: 560px;
+  font-size: 32px;
+  font-weight: 700px;
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.h1.scroll {
+  font-size: 20px;
+  font-weight: 700px;
+  color: #fff;
+}

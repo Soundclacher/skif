@@ -8,11 +8,12 @@
   top: 0;
   left: 0;
   width: calc(100vw - 70px);
+  transition: all .2s;
 }
 
-.h1 {
-  max-width: 560px;
-  font-size: 32px;
-  font-weight: 700px;
-  color: #fff;
+.scroll {
+  padding: 10px 35px;
+  background-color: #000;
+  position: fixed;
+  transition: all .1s;
 }
