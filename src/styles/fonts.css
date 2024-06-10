@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../fonts/Inter-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../fonts/Inter-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('../fonts/Inter-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Jura', sans-serif;
+    src: url('../fonts/Jura-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Jura', sans-serif;
+    src: url('../fonts/Jura-Regular.ttf');
+    font-weight: normal;
+}

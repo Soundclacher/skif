@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery/Gallery';
 import About from './pages/About/About';
 import Events from './pages/Events/Events';
 import './styles/normalize.css';
+import './styles/main.css';
 
 function App() {
 

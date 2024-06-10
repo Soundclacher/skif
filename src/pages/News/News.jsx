@@ -1,47 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import NewsList from '../../components/News/NewsList/NewsList';
 import NewsDetail from '../../components/News/NewsDetail/NewsDetail';
+import axios from 'axios';
 
-
-const newsList = [
-  {
-    files: [],
-    title: '',
-    content: '',
-  },
-  {
-    files: [],
-    title: '',
-    content: '',
-  },
-  {
-    files: [],
-    title: '',
-    content: '',
-  },
-  {
-    files: [],
-    title: '',
-    content: '',
-  }
-];
+import styles from './News.module.css';
 
 
 const News = () => {
 
-  const [news, setNews] = useState(newsList);
-  const [detail, setDetail] = useState({});
+  const [news, setNews] = useState([]);
+  const [detail, setDetail] = useState(news[0]);
 
   function handleChange(event, key) {
-    setDetail(newsList[key])
+    setDetail(news[key]);
   }
 
-  return <>
-    
-    <NewsList items={news} handleChange={handleChange} />
+  async function getNews() {
+    const res = await axios.get('http://localhost:5001/post');
 
-    <NewsDetail detail={detail} />
-  </>;
+    if (res.status === 200)  {
+      setNews(res.data.posts);
+    }
+
+  }
+
+  useEffect(() => {
+    getNews()
+  }, []);
+
+  useEffect(()  =>  {
+    setDetail(news[0]);
+  }, [news]);
+
+  return (
+    <div className={styles.news}>
+
+      <NewsList items={news} handleChange={handleChange} />
+
+      { detail &&  <NewsDetail detail={detail}  />}
+    </div>
+  );
 }
 
 export default News;

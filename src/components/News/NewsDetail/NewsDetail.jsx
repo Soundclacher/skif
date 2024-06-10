@@ -1,10 +1,18 @@
-import React from'react';
-
+import React from 'react';
+import styles from './NewsDetail.module.css';
 const NewsDetail = (props) => {
     return (
-        <>
-            <h1>Detail</h1>
-        </>
+
+        <div className={styles.main_block}>
+            <h2>{props.detail.title}</h2>
+
+            <p>{props.detail.content}</p>
+            <div className="image_block">
+            <img src={'http://localhost:5001/' + props.detail.files[0].path.replace('uploads', '')} alt="" />
+            </div>
+
+        </div>
+
     );
 }
 
