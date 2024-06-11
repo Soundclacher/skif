@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
 
-import styles from './menuItem.module.css';
+import styles from './MenuItem.module.css';
 
 const MenuItem = (props) => {
 

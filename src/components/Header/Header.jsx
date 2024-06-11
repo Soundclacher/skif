@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Logo from '../Logo/Logo';
-import styles from './header.module.css'
+import styles from './Header.module.css'
 import Menu  from  '../Menu/Menu';
 
 const Header = () => {
@@ -20,8 +20,7 @@ const Header = () => {
 
 
   useEffect(()  =>  {
-    console.log(location.pathname)
-    if (location.pathname  == '/')  {
+    if (location.pathname  === '/')  {
       const scrollHandler = () => {
         if (window.scrollY  >  80) {
           setScroll(true);
@@ -33,7 +32,7 @@ const Header = () => {
       return ()  =>  window.removeEventListener('scroll',  scrollHandler)
     }
 
-  }, [location.pathname, window.scrollY])
+  }, [location.pathname])
   
 
 

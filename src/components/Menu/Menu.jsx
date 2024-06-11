@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './menu.module.css';
+import styles from './Menu.module.css';
 import MenuItem from './MenuItem/MenuItem';
 import WriteIcon from './icons/write_us.svg'
 import DocsIcon from './icons/docs.svg';
