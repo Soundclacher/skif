@@ -20,14 +20,17 @@ const Header = () => {
 
 
   useEffect(()  =>  {
+    console.log(location.pathname)
     if (location.pathname  == '/')  {
-      window.addEventListener('scroll', () => {
+      const scrollHandler = () => {
         if (window.scrollY  >  80) {
           setScroll(true);
         } else {
           setScroll(false);
         }    
-      })
+      }
+      window.addEventListener('scroll', scrollHandler)
+      return ()  =>  window.removeEventListener('scroll',  scrollHandler)
     }
 
   }, [location.pathname, window.scrollY])
