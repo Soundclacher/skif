@@ -1,14 +1,14 @@
-.news_item {
+.data_item {
     display: flex;
     align-items: center;
     gap: 36px;
     cursor: pointer;
 }
-.news_item p {
+.data_item p {
     max-width: 300px;
 }
 
-.news_item_content {
+.data_item_content {
     background-color: #F6F6F6;
     border-radius: 35px;
     padding: 20px;
@@ -16,7 +16,7 @@
     height: calc(100% - 40px);
 }
 
-.news_item img {
+.data_item img {
     width: 160px;
     height: 160px;
 }

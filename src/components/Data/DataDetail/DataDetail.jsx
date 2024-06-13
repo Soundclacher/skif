@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './NewsDetail.module.css';
-const NewsDetail = (props) => {
+import styles from './DataDetail.module.css';
+const DataDetail = (props) => {
     return (
 
         <div className={styles.main_block}>
@@ -16,4 +16,4 @@ const NewsDetail = (props) => {
     );
 }
 
-export default NewsDetail;
+export default DataDetail;

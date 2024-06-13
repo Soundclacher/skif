@@ -4,10 +4,9 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 
 import Home from './pages/Home/Home';
-import News from './pages/News/News';
+import Data from './pages/Data/Data';
 import Gallery from './pages/Gallery/Gallery';
 import About from './pages/About/About';
-import Events from './pages/Events/Events';
 import './styles/normalize.css';
 import './styles/main.css';
 
@@ -19,10 +18,10 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<Data fieldName="posts" url="http://localhost:5001/post"/>} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
-        <Route path="/events" element={<Events />} />
+        <Route path="/events" element={<Data fieldName="events" url="http://localhost:5001/event"/>} />
       </Routes>
     </div>
   );
