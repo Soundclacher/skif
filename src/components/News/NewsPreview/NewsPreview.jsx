@@ -10,7 +10,7 @@ const NewsPreview = (props) => {
             </div>
             <div className={styles.news_item_content}>
                 <h2>{props.item.title}</h2>
-                <p>{props.item.content.split('.')[0]}</p>
+                <p>{props.item.content?.split('.')[0]}</p>
             </div>
         </div>
     )
