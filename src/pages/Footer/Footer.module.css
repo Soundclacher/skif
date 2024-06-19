@@ -1,0 +1,34 @@
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 60%;
+    height: 184px;
+    gap: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+.bottom p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.links img {
+    height: 50px;
+    width: 50px;
+}
+
+.phone {
+    /* align-self: self-start; */
+    /* margin-right: 150px; */
+}

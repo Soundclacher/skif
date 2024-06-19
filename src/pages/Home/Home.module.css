@@ -1,0 +1,28 @@
+.mainblock {
+    background-image: url('./bg.png');
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    padding: 0 50px;
+}
+
+.logo {
+    padding-top: 300px;
+    width: 330px;
+    height: 200px;
+    align-self: flex-end;
+    padding-bottom: 50px;
+}
+
+.mainblock p {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.author {
+    margin: 50px 0;
+    align-self: end;
+}
